@@ -19,7 +19,6 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -36,7 +35,9 @@ body {
   height: 100%;
   width: 100%;
   /*background-color: #333;*/
-  font-family: 'Space mono';
+  /*font-family: 'Space mono';*/
+  font-family: 'Quicksand', sans-serif, 'Space mono';
+  font-size: 1.1em;
 }
 body {
   color: #fff;
@@ -70,17 +71,17 @@ body {
   padding: 2rem;
 }
 
-
 /*
  * Header
  */
 @media (min-width: 62em) {
-.masthead {
-  margin-bottom: 2rem;
-  margin-left: 8.8em;
-  margin-top: 1em;
+  .masthead {
+    margin-bottom: 2rem;
+    margin-left: 8.8em;
+    margin-top: 1em;
+  }
 }
-}
+
 .masthead-brand {
   margin-bottom: 0;
 }
