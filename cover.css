@@ -62,10 +62,34 @@ body {
   width: 100%;
 }
 
+.rotated {
+  /*transition: transform 0.3s;*/
+  transform: rotate(90deg);
+  /*transition: transform 0.3s;*/
+}
+
 .menu {
   position: fixed;
+  float: left;
   left: 3%;
   font-size: 1.5em
+}
+
+.dropdown {
+  margin: 0;
+  float: left;
+  top: 5%;
+  list-style: none;
+  display: none;
+  text-align: left;
+}
+
+.dropdown li{
+  /*font-size: 20px;*/
+  /*padding: 25px;*/
+  /*width: 100%;*/
+  /*background: seashell;*/
+  border-bottom: 1px solid black;
 }
 
 .nav-mastfoot .nav-link {
