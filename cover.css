@@ -86,11 +86,11 @@ body {
 /*
  * Header
  */
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .masthead {
     /*margin-left: 12.8em;*/
   }
-}
+}*/
 
 .masthead-brand {
   margin-bottom: 0;
@@ -116,18 +116,14 @@ body {
   color: #fff;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .masthead-brand {
-    /*float: left;*/
+    float: left;
   }
   .nav-masthead {
     /*float: right;*/
   }
-}
-
-/*
- * Cover
- */
+}*/
 
 .cover {
   padding: 0 1.5rem;
@@ -140,52 +136,32 @@ body {
   padding-bottom: 2em;
 }
 
-/*
- * Footer
- */
-
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
 
-/*
- * Affix and center
- */
-
-@media (min-width: 640px) and {
-  /* Pull out the header and footer */
-  .masthead {
-    /*position: fixed;*/
-/*    top: 0;*/
-  }
-
-  .mastfoot {
-    /*position: fixed;
-    bottom: 0;*/
-  }
-
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+/* Start the vertical centering */
+.site-wrapper-inner {
+  vertical-align: middle;
 }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    position: fixed;
-    width: 100%;
-    bottom: 24px;
-  }
+/* Handle the widths */
+.masthead,
+.mastfoot,
+.cover-container {
+  width: 100%; /* Must be percentage or pixels for horizontal alignment */
 }
+
+
+.masthead,
+.mastfoot,
+.cover-container {
+  position: fixed;
+  width: 100%;
+  bottom: 24px;
+  width: 100%;
+}
+
 
 @media only screen 
   and (min-device-width: 320px) 
