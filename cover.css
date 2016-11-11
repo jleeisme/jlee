@@ -72,23 +72,26 @@ body {
   position: fixed;
   float: left;
   left: 3%;
-  font-size: 1.5em
-}
-
-.dropdown {
-  margin: 0;
-  float: left;
-  top: 5%;
-  list-style: none;
-  display: none;
+  font-size: 1.5em;
   text-align: left;
 }
 
+.dropdown {
+  padding: 0;
+  margin: 0;
+  /*float: left;*/
+  /*top: 5%;*/
+  list-style: none;
+  display: none;
+  /*text-align: left;*/
+}
+
 .dropdown li{
-  /*font-size: 20px;*/
+  font-size: .7em;
   /*padding: 25px;*/
-  /*width: 100%;*/
-  /*background: seashell;*/
+  /*margin: 0;*/
+  /*left: 3%;*/
+  /*width: 75px;*/
   border-bottom: 1px solid black;
 }
 
