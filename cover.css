@@ -1,19 +1,22 @@
 /* Links */
-a,
-a:focus,
-a:hover {
+a {
   color: hsla(0, 1%, 10%, 1);
   text-decoration: none;
 }
 
 /* Custom default button */
-.btn-secondary,
+/*.btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; 
   background-color: #fff;
   border: .05rem solid #fff;
+}*/
+
+.ghost-font {
+  color: transparent;
+  transition: linear .8s;
 }
 
 html,
@@ -63,9 +66,7 @@ body {
 }
 
 .rotated {
-  /*transition: transform 0.3s;*/
   transform: rotate(90deg);
-  /*transition: transform 0.3s;*/
 }
 
 .menu {
@@ -79,19 +80,12 @@ body {
 .dropdown {
   padding: 0;
   margin: 0;
-  /*float: left;*/
-  /*top: 5%;*/
   list-style: none;
   display: none;
-  /*text-align: left;*/
 }
 
 .dropdown li{
   font-size: .7em;
-  /*padding: 25px;*/
-  /*margin: 0;*/
-  /*left: 3%;*/
-  /*width: 75px;*/
   border-bottom: 1px solid black;
 }
 
