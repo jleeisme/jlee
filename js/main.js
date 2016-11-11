@@ -15,20 +15,3 @@ $(function() {
   });
 
 });
-
-
-
-// window.onclick = function(event) {
-//   if (!event.target.matches('a')) {
-
-//     var dropdowns = document.getElementsByClassName("hamburger");
-//     var bottomLinks = document.getElementByClassName("nav-link");
-//     var i;
-//     for (i = 0; i < dropdowns.length || bottomLinks.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('ghost-font')) {
-//         openDropdown.classList.remove('ghost-font');
-//       }
-//     }
-//   }
-// }

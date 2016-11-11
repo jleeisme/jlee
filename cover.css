@@ -31,7 +31,6 @@ body {
 
 body {
   color: hsla(0, 0%, 20%, 0.81);
-  /*color: transparent;*/
   opacity: .98;
   text-align: center;
   text-shadow: 0.6rem .7rem .26rem rgba(0,0,0,.75);
