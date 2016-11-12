@@ -1,5 +1,11 @@
 $(function() {
 
+  // var timer = setTimeout(3000);
+
+  setTimeout(function(){
+    $('.cover-heading').addClass('ghost-font');
+  }, 4700);
+
   $('.hamburger').on('click', function(){  
     $('.dropdown').slideToggle(500);
   });
@@ -15,7 +21,9 @@ $(function() {
       }
     });
   }
+
 });
+
 
 // var timer = setTimeout(2000);
 
