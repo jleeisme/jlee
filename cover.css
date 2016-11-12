@@ -4,16 +4,6 @@ a {
   text-decoration: none;
 }
 
-/* Custom default button */
-/*.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; 
-  background-color: #fff;
-  border: .05rem solid #fff;
-}*/
-
 .ghost-font {
   color: transparent;
   transition: linear .8s;
@@ -37,7 +27,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   overflow: hidden;
-  background: url("bkg.jpg") center no-repeat fixed;
+  background: url("assets/bkg.jpg") center no-repeat fixed;
   background-size: cover;
   vertical-align: top;
   display: table;
@@ -79,6 +69,7 @@ body {
 .dropdown {
   padding: 0;
   margin: 0;
+  font-weight: bold;
   list-style: none;
   display: none;
 }
@@ -136,6 +127,32 @@ body {
   width: 100%;
   bottom: 8%;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .inner {
+    position: fixed;
+    top: 35%;
+    width: 100%;
+  }
+}
+
+/*adjust fonts for phones*/
+@media only screen and (max-width: 667px) {
+  .inner {
+    font-size: 0.4em;
+    line-height: 35px;
+  }
+
+  .nav-mastfoot .nav-link {
+    font-weight: bold;
+    font-size: 0.6em;
+    line-height: 25px;
+  }
+
+  .mastfoot {
+    bottom: 5%;
+  }
 }
 
 /* Remove the video from mobile */
