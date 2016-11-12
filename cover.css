@@ -153,6 +153,10 @@ body {
   .mastfoot {
     bottom: 5%;
   }
+
+  .dropdown li {
+    font-size: 0.4em;
+  }
 }
 
 /* Remove the video from mobile */
