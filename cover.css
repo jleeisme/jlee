@@ -137,9 +137,21 @@ body {
   }
 }
 
+/*adjust fonts for phones*/
 @media only screen and (max-width: 667px) {
   .inner {
-    font-size: 0.7em;
+    font-size: 0.4em;
+    line-height: 35px;
+  }
+
+  .nav-mastfoot .nav-link {
+    font-weight: bold;
+    font-size: 0.6em;
+    line-height: 25px;
+  }
+
+  .mastfoot {
+    bottom: 5%;
   }
 }
 

@@ -17,6 +17,8 @@ $(function() {
   }
 });
 
+var timer = setTimeout(2000);
+
 // var alarm = {
 //   remind: function(aMessage) {
 //     alert(aMessage);
