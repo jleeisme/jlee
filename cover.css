@@ -6,7 +6,18 @@ a {
 
 .ghost-font {
   color: transparent;
-  transition: linear .8s;
+  transition: linear .9s;
+}
+
+/*.ghost-main {
+  color: transparent;
+  transition: linear .9s;
+}*/
+
+.font-erase {
+  color: transparent;
+  text-shadow: none;
+  transition: linear 1.7s;
 }
 
 html,

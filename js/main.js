@@ -3,7 +3,9 @@ $(function() {
   // var timer = setTimeout(3000);
 
   setTimeout(function(){
+
     $('.cover-heading').addClass('ghost-font');
+    $('.cover-heading-bottom').addClass('font-erase');
   }, 4700);
 
   $('.hamburger').on('click', function(){  
@@ -14,7 +16,6 @@ $(function() {
     $('a').on('click', function(){
       $(this).addClass('ghost-font');
     });
-
     $(document).on('click', function(e){
       if ($(e.target).is('a') === false) {
         $('a').removeClass('ghost-font');
