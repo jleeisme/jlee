@@ -54,8 +54,14 @@ body {
   width: 100%;
 }
 
-.rotated {
+/*.rotated {
   transform: rotate(90deg);
+}*/
+
+h1 {
+  font-size: 1.9em;
+  font-weight: normal;
+  line-height: 57px;
 }
 
 .menu {
@@ -148,6 +154,7 @@ body {
     font-weight: bold;
     font-size: 0.6em;
     line-height: 25px;
+    letter-spacing: 8px;
   }
 
   .mastfoot {
@@ -155,7 +162,12 @@ body {
   }
 
   .dropdown li {
-    font-size: 0.4em;
+    font-size: 0.3em;
+    border-bottom: none;
+  }
+
+  .menu {
+    font-size: 1.3em;
   }
 }
 
