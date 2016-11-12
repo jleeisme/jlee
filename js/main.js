@@ -1,11 +1,21 @@
 $(function() {
 
   // var timer = setTimeout(3000);
+  var coverHeadingBottom = $('.cover-heading-bottom');
+  var coverHeading = $('.cover-heading');
 
   setTimeout(function(){
-    $('.cover-heading').addClass('ghost-font');
-    $('.cover-heading-bottom').addClass('font-erase');
+    coverHeading.addClass('ghost-font');
+    coverHeadingBottom.addClass('font-erase');
+    // coverHeadingBottom.text(coverHeadingBottom.data("text-swap"));
   }, 4700);
+  setTimeout(function(){
+    coverHeadingBottom.text(coverHeadingBottom.data("text-swap"));
+    coverHeadingBottom.removeClass('font-erase');
+    coverHeadingBottom.addClass('ghost-font');
+  }, 6500);
+
+
 
   $('.hamburger').on('click', function(){  
     $('.dropdown').slideToggle(800);
