@@ -149,7 +149,7 @@ h1 {
 @media only screen and (max-width: 768px) {
   .inner {
     position: fixed;
-    top: 35%;
+    top: 26%;
     width: 100%;
   }
 }
