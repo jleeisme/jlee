@@ -10,7 +10,7 @@ $(function() {
   }, 4700);
 
   setTimeout(function(){
-    coverHeadingBottom.text(coverHeadingBottom.data("text-swap"));
+    coverHeadingBottom.text(coverHeadingBottom.data("text-swap"));// takes the data from cover-heading-bottom as the new text
     coverHeadingBottom.removeClass('font-erase');
     coverHeadingBottom.addClass('ghost-font');
   }, 6500);
