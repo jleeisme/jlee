@@ -42,6 +42,10 @@ body {
   overflow: hidden;
 }
 
+.vid-stop {
+  display: none;
+}
+
 .ghost-font {
   color: transparent;
   transition: linear .9s;
@@ -141,6 +145,7 @@ h1 {
   width: 100%;
 }
 
+/* slightly lower position on mobile */
 @media only screen and (max-width: 768px) {
   .inner {
     position: fixed;
@@ -183,6 +188,6 @@ h1 {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     video {
-        display:none;
+      display:none;
     }
 }
