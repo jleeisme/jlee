@@ -16,9 +16,9 @@ $(function() {
   }, 7000);
 
   // may just leave the poster up instead
-  setTimeout(function(){
-    $('video').addClass('.vid-stop');
-  }, 10000);
+  // setTimeout(function(){
+  //   $('video').addClass('.vid-stop');
+  // }, 10000);
 
   $('.hamburger').on('click', function(){  
     $('.dropdown').slideToggle(800);
