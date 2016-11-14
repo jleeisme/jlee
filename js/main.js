@@ -12,8 +12,8 @@ $(function() {
   setTimeout(function(){
     coverHeadingBottom.text(coverHeadingBottom.data("text-swap"));// takes the data from cover-heading-bottom as the new text
     coverHeadingBottom.removeClass('font-erase');
-    coverHeadingBottom.addClass('ghost-font');
-  }, 6500);
+    coverHeadingBottom.addClass('ghost-font-slow');
+  }, 7000);
 
   // may just leave the poster up instead
   setTimeout(function(){
