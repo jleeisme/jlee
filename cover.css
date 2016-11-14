@@ -4,6 +4,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
 html,
 body {
   height: 100%;
@@ -168,7 +172,7 @@ h1 {
 /*}*/
 /*@media only screen and (max-width: 667px) {*/
   .inner {
-    font-size: 6.4px;
+    font-size: 7px;
     line-height: 35px;
     position: fixed;
     top: 20%;
@@ -177,9 +181,9 @@ h1 {
 
   .nav-mastfoot .nav-link {
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 25px;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
   }
 
   .mastfoot {
@@ -187,7 +191,7 @@ h1 {
   }
 
   .dropdown li {
-    font-size: 6px;
+    font-size: 8px;
     border-bottom: none;
     line-height: 27px;
   }
