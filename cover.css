@@ -51,10 +51,15 @@ body {
   transition: linear .9s;
 }
 
+.ghost-font-slow {
+  color: transparent;
+  transition: linear 1.5s;
+}
+
 .font-erase {
   color: transparent;
   text-shadow: none;
-  transition: linear 1.5s;
+  transition: linear 1.4s;
 }
 
 /* Padding for spacing */
