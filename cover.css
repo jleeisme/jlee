@@ -4,8 +4,9 @@ a {
   text-decoration: none;
 }
 
+/* prevents font scaling on rotation...a safari thing??? */ 
 html {
-  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  -webkit-text-size-adjust: 100%; 
 }
 
 html,
@@ -97,7 +98,6 @@ h1 {
 
 .dropdown li{
   font-size: .7em;
-  /*border-bottom: 1px solid black;*/
 }
 
 .nav-mastfoot .nav-link {
@@ -150,8 +150,6 @@ h1 {
   width: 100%;
 }
 
-
-
 /* slightly lower position on mobile */
 @media only screen and (max-width: 768px) {
   .inner {
@@ -161,16 +159,12 @@ h1 {
   }
 }
 
-
 /*adjust fonts for phones*/
-
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
-/*}*/
-/*@media only screen and (max-width: 667px) {*/
   .inner {
     font-size: 7px;
     line-height: 35px;
@@ -204,13 +198,3 @@ h1 {
     display:none;
   }
 }
-
-/* Remove the video from mobile */
-/*@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    video {
-      display:none;
-    }
-}*/
