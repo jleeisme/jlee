@@ -76,7 +76,7 @@ body {
 h1 {
   font-size: 1.9em;
   font-weight: normal;
-  line-height: 57px;
+  line-height: 93px;
 }
 
 .menu {
@@ -163,6 +163,10 @@ h1 {
   and (min-device-width: 320px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+
+  h1 {
+    line-height: 57px;
+  }    
 
   .inner {
     font-size: 7px;
