@@ -58,19 +58,23 @@ a {
 
 .ghost-font {
   color: transparent;
-  transition: linear .9s;
+  transition: ease-in-out .9s;
 }
 
 .ghost-font-slow {
   color: transparent;
-  transition: linear 1.5s;
+  transition: ease-in-out 1.5s;
 }
 
 .font-erase {
   color: transparent;
   text-shadow: none;
-  transition: linear 1.4s;
+  transition: ease-in-out 1.4s;
 }
+
+/*.easing {
+  transition: ease-in-out .5s;
+}*/
 
 /* Padding for spacing */
 .inner {
