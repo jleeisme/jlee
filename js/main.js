@@ -21,7 +21,7 @@ $(function() {
   // }, 10000);
 
   $('.hamburger').on('click', function(){  
-    $('.dropdown').slideToggle(900, 'swing');
+    $('.dropdown').fadeToggle(900, 'swing');
   });
 
   if ($(window).width() > 769){// mobile sites aren't really that nice. Be honest.
