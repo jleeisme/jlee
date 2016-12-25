@@ -99,7 +99,7 @@ a {
   display: none;
 }
 
-.dropdown li{
+.dropdown li {
   font-size: .7em;
 }
 
@@ -114,6 +114,10 @@ a {
 .nav-mastfoot .nav-link:focus {
   border-bottom-color: hsla(0, 1%, 20%, .6);
 }
+
+/*.dropdown li {
+  border-bottom-color: hsla(0, 1%, 20%, .6);
+}*/
 
 .nav-mastfoot .nav-link + .nav-link {
   margin-left: 1rem;
