@@ -4,12 +4,12 @@ $(function() {
   var coverHeadingBottom = $('.cover-heading-bottom');
   var coverHeading = $('.cover-heading');
 
-  setTimeout(function(){
+  setTimeout(() => {
     coverHeading.addClass('ghost-font');
     coverHeadingBottom.addClass('font-erase');;
   }, 4700);
 
-  setTimeout(function(){
+  setTimeout(() => {
     coverHeadingBottom.text(coverHeadingBottom.data("text-swap"));// takes the data from cover-heading-bottom as the new text
     coverHeadingBottom.removeClass('font-erase');
     coverHeadingBottom.addClass('ghost-font-slow');
@@ -20,15 +20,15 @@ $(function() {
   //   $('video').addClass('.vid-stop');
   // }, 10000);
 
-  $('.hamburger').on('click', function(){  
+  $('.hamburger').on('click', () => {  
     $('.dropdown').fadeToggle(900, 'swing');
   });
 
   if ($(window).width() > 769){// mobile sites aren't really that nice. Be honest.
-    $('a').on('click', function(){
+    $('a').on('click', () => {
       $(this).addClass('ghost-font');
     });
-    $(document).on('click', function(e){// cancels the ghost if clicked oustide 'a'
+    $(document).on('click', e =>{// cancels the ghost if clicked oustide 'a'
       if ($(e.target).is('a') === false) {
         $('a').removeClass('ghost-font');
       }

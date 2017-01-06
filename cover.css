@@ -103,6 +103,10 @@ a {
   font-size: .7em;
 }
 
+.underline {
+  border-bottom-color: hsla(0, 1%, 20%, .6);
+}
+
 .nav-mastfoot .nav-link {
   padding: .25rem 0;
   font-weight: bold;
