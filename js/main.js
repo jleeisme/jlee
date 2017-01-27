@@ -1,12 +1,15 @@
 $(function() {
 
-  // vars for repeated content
-  var coverHeadingBottom = $('.cover-heading-bottom');
-  var coverHeading = $('.cover-heading');
+  // const for repeated content
+  const coverHeadingBottom = $('.cover-heading-bottom');
+  const coverHeadingTop = $('.cover-heading-top');
+  const coverHeading = $('.cover-heading');
 
   setTimeout(() => {
     coverHeading.addClass('ghost-font');
-    coverHeadingBottom.addClass('font-erase');;
+    coverHeadingBottom.addClass('font-erase');
+    coverHeadingTop.addClass('bye-bye-border');
+    coverHeadingBottom.addClass('bye-bye-border');
   }, 4700);
 
   setTimeout(() => {

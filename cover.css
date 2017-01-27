@@ -25,6 +25,7 @@ body {
   background-size: cover;
   vertical-align: top;
   display: table;
+  margin: 0;
 }
 
 h1 {
@@ -58,7 +59,7 @@ a {
 
 .ghost-font {
   color: transparent;
-  transition: ease-in-out .9s;
+  transition: ease-in-out 1.4s;
 }
 
 .ghost-font-slow {
@@ -89,6 +90,7 @@ a {
   left: 3%;
   font-size: 1.5em;
   text-align: left;
+  top: 3%;
 }
 
 .dropdown {
@@ -161,7 +163,26 @@ a {
   width: 100%;
 }
 
-/* slightly lower position on mobile */
+@media only screen and (min-width: 768px) {
+  .cover-heading-top,
+  .cover-heading-bottom {
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 1px 15px;
+  }
+
+  .cover-heading-top:hover,
+  .cover-heading-bottom:hover {
+    color: hsla(0, 1%, 10%, 1);
+  } 
+
+  .bye-bye-border {
+    border: 0 solid transparent;
+    transition: ease-in-out 1.4s;
+  }
+}
+
+ /*slightly lower position on mobile */
 @media only screen and (max-width: 768px) {
   .inner {
     position: fixed;
