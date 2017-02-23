@@ -28,6 +28,15 @@ body {
   margin: 0;
 }
 
+.page-two {
+  position: fixed; 
+  /*top: 0; */
+  z-index:0; 
+  width:100%; 
+  /*padding-top:50%; */
+  background: url("assets/f.jpg") center no-repeat fixed;
+}
+
 h1 {
   font-size: 1.9em;
   font-weight: normal;
@@ -60,6 +69,10 @@ a {
 .ghost-font {
   color: transparent;
   transition: ease-in-out 1.4s;
+  /*margin: 0 auto;*/
+  /*width: 45%;*/
+  /*border-top: 1px rgba(101, 100, 100, 0.38) solid;
+  border-bottom: 1px rgba(101, 100, 100, 0.38) solid;*/
 }
 
 .ghost-font-slow {
@@ -166,8 +179,8 @@ a {
 @media only screen and (min-width: 768px) {
   .cover-heading-top,
   .cover-heading-bottom {
-    border-left: 2px solid gray;
-    border-right: 2px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
     padding: 1px 15px;
   }
 
