@@ -166,8 +166,8 @@ a {
 @media only screen and (min-width: 768px) {
   .cover-heading-top,
   .cover-heading-bottom {
-    border-left: 2px solid gray;
-    border-right: 2px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
     padding: 1px 15px;
   }
 
