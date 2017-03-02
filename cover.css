@@ -137,6 +137,7 @@ a.hamburger:before {
 }*/
   padding: .25rem 0;
   font-weight: bold;
+  font-size: 1.1em;
   background-color: transparent;
   border-bottom: .12rem solid transparent;
 }
@@ -198,6 +199,11 @@ a.hamburger:before {
   width: 100%;
 }
 
+.sidebar-items li {
+  display: block;
+  list-style: none;
+}
+
 @media only screen and (min-width: 768px) {
   .cover-heading-top,
   .cover-heading-bottom {
@@ -247,7 +253,7 @@ a.hamburger:before {
 
   .nav-mastfoot .nav-link {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 25px;
     letter-spacing: 6px;
   }
@@ -264,6 +270,7 @@ a.hamburger:before {
 
   .menu {
     font-size: 20.8px;
+    top: 4%;
   }
 
   video {
