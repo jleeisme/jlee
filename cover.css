@@ -44,7 +44,7 @@ a {
 a.hamburger:before {
   content: '\25BD';
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: lighter;
 }
 
 #vid { 
@@ -190,7 +190,6 @@ a.hamburger:before {
   width: 100%;  Must be percentage or pixels for horizontal alignment 
 }*/
 
-.mastfoot,
 .mastfoot,
 .cover-container {
   position: fixed;
