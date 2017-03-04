@@ -19,7 +19,7 @@ body {
   color: hsla(0, 0%, 20%, 0.81);
   opacity: .98;
   text-align: center;
-  text-shadow: 0.6rem .7rem .26rem rgba(0,0,0,.80);
+  text-shadow: 0.6rem .7rem .26rem rgba(0 ,0 ,0 , .80);
   min-height: 100%;
   min-width: 100%;
   overflow: hidden;
@@ -103,6 +103,7 @@ a.hamburger:before {
   font-size: 1.5em;
   text-align: left;
   top: 6%;
+  /*z-index: 10;*/
 }
 
 .dropdown {
@@ -199,30 +200,10 @@ a.hamburger:before {
 }
 
 /* off canvas sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background: hsla(0, 1%, 20%, .6);
-  width: 60%;
-  text-align: left;
-  transition: ease .3s;
-  transform: translateX(-101%);
-}
 
-.sidebar-visible {
-  transform: translateX(0px);
-}
-
-.sidebar-items a {
-  font-size: 0.6em;
-}
-
-.sidebar-items li {
-  display: block;
-  list-style: none;
-  line-height: 70px;
-}
+/*.triangle-to-go {
+  display: none;
+}*/
 
 /* media time */
 @media only screen and (min-width: 768px) {
@@ -241,6 +222,10 @@ a.hamburger:before {
   .bye-bye-border {
     border: 0 solid transparent;
     transition: ease-in-out 1.4s;
+  }
+
+  .sidebar {
+    display: none;
   }
 }
 
@@ -261,7 +246,8 @@ a.hamburger:before {
 
   h1 {
     line-height: 55px;
-    font-size: 2.3em;
+    font-size: 2.9em;
+    font-weight: bold;
   }    
 
   .inner {
@@ -295,7 +281,58 @@ a.hamburger:before {
     top: 4%;
   }
 
+  .menu-to-go {
+    position: fixed;
+    float: left;
+    left: 5%;
+    /*font-size: 1.5em;*/
+    text-align: left;
+    top: 4%;
+  }
+
+  a.triangle-to-go:after {
+    content: '\25B3';
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+
+  a.triangle-to-go.hidden:after {
+    /*color: transparent;*/
+    content: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: hsla(0, 1%, 20%, .6);
+    width: 60%;
+    overflow-x: hidden;
+    text-align: left;
+    z-index: 10;
+    transition: ease .5s;
+    transform: translateX(-101%);
+  }
+
+  .sidebar-visible {
+    transform: translateX(0%);
+  }
+
+  .sidebar-items a {
+    font-size: 0.6em;
+  }
+
+  .sidebar-items li {
+    display: block;
+    list-style: none;
+    line-height: 70px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
   video {
-    display:none;
+    display: none;
   }
 }

@@ -4,6 +4,7 @@ $(function() {
   const coverHeadingBottom = $('.cover-heading-bottom');
   const coverHeadingTop = $('.cover-heading-top');
   const coverHeading = $('.cover-heading');
+  const triangle = $('.triangle-to-go');
 
   setTimeout(() => {
     coverHeading.addClass('ghost-font');
@@ -25,6 +26,11 @@ $(function() {
 
   $('.hamburger').on('click', () => {  
     $('.dropdown').fadeToggle(900, 'swing');
+  });
+
+  triangle.on('click', () => {
+    triangle.addClass('hidden');
+    $('.sidebar').addClass('sidebar-visible');
   });
 
   if ($(window).width() > 769){// mobile sites aren't really that nice. Be honest.
