@@ -198,11 +198,33 @@ a.hamburger:before {
   width: 100%;
 }
 
+/* off canvas sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: hsla(0, 1%, 20%, .6);
+  width: 60%;
+  text-align: left;
+  transition: ease .3s;
+  transform: translateX(-101%);
+}
+
+.sidebar-visible {
+  transform: translateX(0px);
+}
+
+.sidebar-items a {
+  font-size: 0.6em;
+}
+
 .sidebar-items li {
   display: block;
   list-style: none;
+  line-height: 70px;
 }
 
+/* media time */
 @media only screen and (min-width: 768px) {
   .cover-heading-top,
   .cover-heading-bottom {
@@ -258,6 +280,7 @@ a.hamburger:before {
   }
 
   .mastfoot {
+    display: none;
     bottom: 5%;
   }
 

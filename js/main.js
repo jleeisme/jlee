@@ -31,7 +31,7 @@ $(function() {
     $('a').on('click', () => {
       $(this).addClass('ghost-font');
     });
-    $(document).on('click', e =>{// cancels the ghost if clicked oustide 'a'
+    $(document).on('click', e => {// cancels the ghost if clicked oustide 'a'
       if ($(e.target).is('a') === false) {
         $('a').removeClass('ghost-font');
       }
