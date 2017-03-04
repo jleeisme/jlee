@@ -229,7 +229,7 @@ a.hamburger:before {
   }*/
 }
 
-@media only screen and (min-width: 736px) {
+@media only screen and (min-width: 737px) {
   .sidebar {
     display: none;
   }
@@ -313,7 +313,7 @@ a.hamburger:before {
   }
 
   .sidebar-items {
-    line-height: 42px;
+    line-height: 1.6em;
     top: 5%;
     position: fixed;
   }
@@ -356,9 +356,17 @@ a.hamburger:before {
   .mastfoot {
     display: none;
   }
-
-
 }
+
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .sidebar-items {
+      line-height: 35px;
+    }
+}*/
 
  /*slightly lower position on mobile */
 @media only screen and (max-width: 768px) {
