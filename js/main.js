@@ -5,6 +5,7 @@ $(function() {
   const $coverHeadingTop = $('.cover-heading-top');
   const $coverHeading = $('.cover-heading');
   const $triangle = $('.triangle-to-go');
+  const $sidebar = $('.sidebar');
 
   setTimeout(() => {
     $coverHeading.addClass('ghost-font');
@@ -30,21 +31,14 @@ $(function() {
 
   $triangle.on('click', () => {
     $triangle.addClass('hidden');
-    $('.sidebar').addClass('sidebar-visible');
+    $sidebar.addClass('sidebar-visible');
     // $('.sidebar-mask').addClass('sidebar-mask-visible');
   });
 
   $('.close').on('click', () => {
-    $('.sidebar').removeClass('sidebar-visible');
+    $sidebar.removeClass('sidebar-visible');
     $triangle.removeClass('hidden');
   });
-
-  // $(document).on('click', e => {
-  //   if ($(e.target).is('.sidebar-items') === false) {
-  //     $('sidebar').removeClass('sidebar-visible');
-  //     triangle.removeClass('hidden');
-  //   }
-  // });
 
   if ($(window).width() > 769){// mobile sites aren't really that nice. Be honest.
     $('a').on('click', () => {
