@@ -353,6 +353,10 @@ a.hamburger:before {
     display: none;
   }
 
+  .mastfoot {
+    display: none;
+  }
+
 
 }
 
