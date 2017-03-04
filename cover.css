@@ -1,5 +1,5 @@
 /* prevents font scaling on rotation...a safari thing??? */ 
-html {
+* {
   -webkit-text-size-adjust: 100%; 
 }
 
@@ -235,6 +235,127 @@ a.hamburger:before {
   }
 }
 
+@media only screen and (max-width: 736px) {
+  .menu-to-go {
+    position: fixed;
+    float: left;
+    left: 5%;
+    /*font-size: 1.5em;*/
+    text-align: left;
+    top: 4%;
+  }
+
+  /*a.triangle-to-go:before {
+    content: '\25B3';
+    font-size: 1.5em;
+    font-weight: lighter;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }*/
+
+  a.triangle-to-go:after {
+    content: '\25B3';
+    font-size: 2em;
+    font-weight: lighter;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  a.triangle-to-go.hidden:after {
+    /*color: transparent;*/
+    opacity: 0;
+    transition: opacity 0.7s;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    -ms-transition: opacity 0.7s;
+    -o-transition: opacity 0.7s;
+    /*content: none;*/
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: hsla(0, 1%, 20%, .8);
+    width: 60%;
+    overflow-x: hidden;
+    text-align: left;
+    z-index: 10;
+    transition: ease .5s;
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    -ms-transition: ease .5s;
+    -o-transition: ease .5s;
+    transform: translateX(-101%);
+  }
+
+  .sidebar-visible {
+    transform: translateX(0%);
+  }
+
+  .sidebar-mask {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: hsla(0, 1%, 1%, .7);
+    left: 0;
+    top: 0;
+    /*opacity: .1;*/
+    visibility: hidden;
+    z-index: 5;
+    transition: all .1s;
+    transform: translateZ(0);
+  }
+
+  .sidebar-mask-visible {
+    visibility: visible;
+    opacity: .9;
+  }
+
+  .sidebar-items {
+    line-height: 42px;
+    top: 5%;
+    position: fixed;
+  }
+
+  .close {
+    position: fixed;
+    /*left: 11%;*/
+    /*float: right;*/
+    right: 8%;
+    top: 3%;
+    font-size: 3.5em;
+    font-weight: lighter;
+    /*color: #0e0e0e;*/
+    color: hsla(0, 0%, 88%, 0.42);
+    /*margin-top: 13px;*/
+    /*margin-right: 20px;*/
+    z-index: 20;
+  }
+
+  .sidebar-items a {
+    font-size: 0.6em;
+    /*color: #e3e3e3;*/
+    color: hsla(0, 0%, 88%, 0.72);
+  }
+
+  .sidebar-items li {
+    display: block;
+    list-style: none;
+    /*line-height: 70px;*/
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+
+}
+
  /*slightly lower position on mobile */
 @media only screen and (max-width: 768px) {
   .inner {
@@ -285,93 +406,6 @@ a.hamburger:before {
   .menu {
     font-size: 20.8px;
     top: 4%;
-  }
-
-  .menu-to-go {
-    position: fixed;
-    float: left;
-    left: 5%;
-    /*font-size: 1.5em;*/
-    text-align: left;
-    top: 4%;
-  }
-
-  a.triangle-to-go:after {
-    content: '\25B3';
-    font-size: 1.5em;
-    font-weight: lighter;
-  }
-
-  a.triangle-to-go.hidden:after {
-    /*color: transparent;*/
-    content: none;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    background: hsla(0, 1%, 20%, .6);
-    width: 60%;
-    overflow-x: hidden;
-    text-align: left;
-    z-index: 10;
-    transition: ease .5s;
-    transform: translateX(-101%);
-  }
-
-  .sidebar-visible {
-    transform: translateX(0%);
-  }
-
-  .sidebar-mask {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: hsla(0, 1%, 1%, .7);
-    left: 0;
-    top: 0;
-    /*opacity: .1;*/
-    visibility: hidden;
-    z-index: 5;
-    transition: all .1s;
-    transform: translateZ(0);
-  }
-
-  .sidebar-mask-visible {
-    visibility: visible;
-    opacity: .9;
-  }
-
-  .sidebar-items {
-    line-height: 42px;
-    top: 6%;
-    position: relative;
-  }
-
-  .close {
-    position: fixed;
-    /*left: 11%;*/
-    /*float: right;*/
-    right: 8%;
-    top: 3%;
-    /*margin-top: 13px;*/
-    /*margin-right: 20px;*/
-    z-index: 20;
-  }
-
-  .sidebar-items a {
-    font-size: 0.6em;
-  }
-
-  .sidebar-items li {
-    display: block;
-    list-style: none;
-    /*line-height: 70px;*/
-  }
-
-  .hamburger {
-    display: none;
   }
 
   video {
