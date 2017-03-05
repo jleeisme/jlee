@@ -254,7 +254,7 @@ a.hamburger:before {
   }*/
 
   a.triangle-to-go:after {
-    content: '\25B3';
+    content: '\25BD';
     font-size: 2em;
     font-weight: lighter;
     opacity: 1;
@@ -323,8 +323,8 @@ a.hamburger:before {
     /*left: 11%;*/
     /*float: right;*/
     right: 8%;
-    top: 3%;
-    font-size: 3.5em;
+    top: 2%;
+    font-size: 1.7em;
     font-weight: lighter;
     /*color: #0e0e0e;*/
     color: hsla(0, 0%, 88%, 0.42);
