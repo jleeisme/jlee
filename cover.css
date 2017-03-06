@@ -220,7 +220,7 @@ a.hamburger:before {
 
   a.triangle-to-go:after {
     content: '\25BD';
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: lighter;
     opacity: 1;
     transition: 0.5s;
