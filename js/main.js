@@ -32,7 +32,6 @@ $(function() {
   $triangle.on('click', () => {
     $triangle.addClass('hidden');
     $sidebar.addClass('sidebar-visible');
-    // $('.sidebar-mask').addClass('sidebar-mask-visible');
   });
 
   $('.close').on('click', () => {

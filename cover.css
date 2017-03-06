@@ -85,10 +85,6 @@ a.hamburger:before {
   transition: ease-in-out 1.4s;
 }
 
-/*.easing {
-  transition: ease-in-out .5s;
-}*/
-
 /* Padding for spacing */
 .inner {
   position: fixed;
@@ -103,7 +99,6 @@ a.hamburger:before {
   font-size: 1.5em;
   text-align: left;
   top: 6%;
-  /*z-index: 10;*/
 }
 
 .dropdown {
@@ -143,24 +138,10 @@ a.hamburger:before {
   border-bottom: .12rem solid transparent;
 }
 
-/*.nav-mastfoot a {
-  text-align: center;
-    top: 50px;
-    left: -47px;
-    position: relative;
-    width: 93px;
-    height: 93px;
-    margin: 0px;
-}*/
-
 .nav-mastfoot .nav-link:hover,
 .nav-mastfoot .nav-link:focus {
   border-bottom-color: hsla(0, 1%, 20%, .6);
 }
-
-/*.dropdown li {
-  border-bottom-color: hsla(0, 1%, 20%, .6);
-}*/
 
 .nav-mastfoot .nav-link + .nav-link {
   margin-left: 1rem;
@@ -185,12 +166,6 @@ a.hamburger:before {
 }
 
 /* Handle the widths */
-
-/*.mastfoot,
-.cover-container {
-  width: 100%;  Must be percentage or pixels for horizontal alignment 
-}*/
-
 .mastfoot,
 .cover-container {
   position: fixed;
@@ -198,12 +173,6 @@ a.hamburger:before {
   bottom: 8%;
   width: 100%;
 }
-
-/* off canvas sidebar */
-
-/*.triangle-to-go {
-  display: none;
-}*/
 
 /* media time */
 @media only screen and (min-width: 768px) {
@@ -223,10 +192,6 @@ a.hamburger:before {
     border: 0 solid transparent;
     transition: ease-in-out 1.4s;
   }
-
-  /*.sidebar {
-    display: none;
-  }*/
 }
 
 @media only screen and (min-width: 737px) {
@@ -254,8 +219,8 @@ a.hamburger:before {
   }*/
 
   a.triangle-to-go:after {
-    content: '\25B3';
-    font-size: 2em;
+    content: '\25BD';
+    font-size: 1.5em;
     font-weight: lighter;
     opacity: 1;
     transition: 0.5s;
@@ -323,8 +288,8 @@ a.hamburger:before {
     /*left: 11%;*/
     /*float: right;*/
     right: 8%;
-    top: 3%;
-    font-size: 3.5em;
+    top: 2%;
+    font-size: 1.7em;
     font-weight: lighter;
     /*color: #0e0e0e;*/
     color: hsla(0, 0%, 88%, 0.42);
