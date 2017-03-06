@@ -207,7 +207,7 @@ a.hamburger:before {
     left: 5%;
     /*font-size: 1.5em;*/
     text-align: left;
-    top: 4%;
+    top: 2%;
   }
 
   /*a.triangle-to-go:before {
@@ -289,7 +289,7 @@ a.hamburger:before {
     /*float: right;*/
     right: 8%;
     top: 2%;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: lighter;
     /*color: #0e0e0e;*/
     color: hsla(0, 0%, 88%, 0.42);
